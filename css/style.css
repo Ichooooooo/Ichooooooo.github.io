@@ -12010,17 +12010,23 @@ body.theme-dark .column-right .widget.card#toc .menu-list a.level.is-active {
   color: rgba(0,0,0,0.72);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45), 0 6px 16px rgba(50,115,220,0.16);
 }
-.theme-toggle-track .fa-moon,
+.theme-toggle-track .theme-toggle-icon {
+  display: block;
+  width: 1.45rem;
+  height: 1.45rem;
+  object-fit: contain;
+}
+.theme-toggle-track .theme-toggle-icon-moon,
 .theme-toggle-track .theme-toggle-thumb {
   display: none !important;
 }
-.theme-toggle-track .fa-sun {
-  display: inline-block !important;
+.theme-toggle-track .theme-toggle-icon-sun {
+  display: block !important;
 }
-html:not(.theme-dark) .theme-toggle-track .fa-sun {
-  display: inline-block !important;
+html:not(.theme-dark) .theme-toggle-track .theme-toggle-icon-sun {
+  display: block !important;
 }
-html:not(.theme-dark) .theme-toggle-track .fa-moon {
+html:not(.theme-dark) .theme-toggle-track .theme-toggle-icon-moon {
   display: none !important;
 }
 html.theme-dark .theme-toggle-track,
@@ -12028,13 +12034,13 @@ body.theme-dark .theme-toggle-track {
   background: linear-gradient(135deg, #2c3268, #101522);
   color: rgba(255,255,255,0.86);
 }
-html.theme-dark .theme-toggle-track .fa-sun,
-body.theme-dark .theme-toggle-track .fa-sun {
+html.theme-dark .theme-toggle-track .theme-toggle-icon-sun,
+body.theme-dark .theme-toggle-track .theme-toggle-icon-sun {
   display: none !important;
 }
-html.theme-dark .theme-toggle-track .fa-moon,
-body.theme-dark .theme-toggle-track .fa-moon {
-  display: inline-block !important;
+html.theme-dark .theme-toggle-track .theme-toggle-icon-moon,
+body.theme-dark .theme-toggle-track .theme-toggle-icon-moon {
+  display: block !important;
 }
 html.theme-dark,
 html.theme-dark body,
