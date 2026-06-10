@@ -12015,14 +12015,23 @@ body.theme-dark .column-right .widget.card#toc .menu-list a.level.is-active {
 .theme-toggle-track .fa-sun {
   display: inline-block !important;
 }
-html.theme-dark .theme-toggle-track {
+html:not(.theme-dark) .theme-toggle-track .fa-sun {
+  display: inline-block !important;
+}
+html:not(.theme-dark) .theme-toggle-track .fa-moon {
+  display: none !important;
+}
+html.theme-dark .theme-toggle-track,
+body.theme-dark .theme-toggle-track {
   background: linear-gradient(135deg, #2c3268, #101522);
   color: rgba(255,255,255,0.86);
 }
-html.theme-dark .theme-toggle-track .fa-sun {
+html.theme-dark .theme-toggle-track .fa-sun,
+body.theme-dark .theme-toggle-track .fa-sun {
   display: none !important;
 }
-html.theme-dark .theme-toggle-track .fa-moon {
+html.theme-dark .theme-toggle-track .fa-moon,
+body.theme-dark .theme-toggle-track .fa-moon {
   display: inline-block !important;
 }
 html.theme-dark,
