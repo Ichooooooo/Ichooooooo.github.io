@@ -11380,6 +11380,55 @@ figure.highlight.foldable div.level-left {
 .level.is-multiline {
   flex-wrap: wrap;
 }
+.column-right .widget.card#toc {
+  background: rgba(255,255,255,0.96);
+  border: 1px solid rgba(10,10,10,0.06);
+  box-shadow: 0 10px 30px rgba(10,10,10,0.08);
+  border-radius: 8px;
+}
+.column-right .widget.card#toc .card-content {
+  padding: 1.35rem 1.1rem 1.2rem;
+}
+.column-right .widget.card#toc .menu-label {
+  margin: 0 0 1rem;
+  color: #cdcdcd;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+}
+.column-right .widget.card#toc .menu-list {
+  line-height: 1.65;
+}
+.column-right .widget.card#toc .menu-list li ul {
+  margin: 0.15rem 0 0.2rem 0.85rem;
+  padding-left: 0.7rem;
+  border-left: 1px solid rgba(10,10,10,0.08);
+}
+.column-right .widget.card#toc .menu-list a.level {
+  display: block;
+  padding: 0.18rem 0.35rem;
+  border-radius: 4px;
+  color: #cdcdcd;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  white-space: normal;
+}
+.column-right .widget.card#toc .menu-list a.level:hover {
+  background: rgba(50,115,220,0.08);
+  color: #fcee09;
+}
+.column-right .widget.card#toc .menu-list a.level.is-active {
+  background: rgba(50,115,220,0.12);
+  color: #fcee09;
+  font-weight: 600;
+}
+.column-right .widget.card#toc .menu-list a.level .level-left {
+  display: block;
+}
+.column-right .widget.card#toc .menu-list a.level .level-item {
+  display: inline;
+}
 @media screen and (max-width: 768px) {
   .widget.card#toc {
     display: none;
