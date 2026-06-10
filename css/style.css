@@ -11996,24 +11996,28 @@ body.theme-dark .column-right .widget.card#toc .menu-list a.level.is-active {
 .navbar-main .theme-toggle {
   display: flex;
   align-items: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  background: transparent !important;
+}
+.navbar-main .theme-toggle:hover,
+.navbar-main .theme-toggle.is-active {
+  background: transparent !important;
 }
 .theme-toggle-track {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #fff2a8, #ffd666);
-  color: rgba(0,0,0,0.72);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45), 0 6px 16px rgba(50,115,220,0.16);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 .theme-toggle-track .theme-toggle-icon {
   display: block;
-  width: 1.45rem;
-  height: 1.45rem;
+  width: 1.55rem;
+  height: 1.55rem;
   object-fit: contain;
 }
 .theme-toggle-track .theme-toggle-icon-moon,
@@ -12031,8 +12035,8 @@ html:not(.theme-dark) .theme-toggle-track .theme-toggle-icon-moon {
 }
 html.theme-dark .theme-toggle-track,
 body.theme-dark .theme-toggle-track {
-  background: linear-gradient(135deg, #2c3268, #101522);
-  color: rgba(255,255,255,0.86);
+  background: transparent !important;
+  box-shadow: none !important;
 }
 html.theme-dark .theme-toggle-track .theme-toggle-icon-sun,
 body.theme-dark .theme-toggle-track .theme-toggle-icon-sun {
@@ -12072,6 +12076,29 @@ html.theme-dark body .navbar-main .navbar-item.is-active,
 body.theme-dark .navbar-main .navbar-item.is-active {
   color: #fff !important;
   background: rgba(255,255,255,0.06) !important;
+}
+html.theme-dark .navbar-main .theme-toggle,
+html.theme-dark body .navbar-main .theme-toggle,
+body.theme-dark .navbar-main .theme-toggle,
+html.theme-dark .navbar-main .theme-toggle:hover,
+html.theme-dark body .navbar-main .theme-toggle:hover,
+body.theme-dark .navbar-main .theme-toggle:hover,
+html.theme-dark .navbar-main .theme-toggle.is-active,
+html.theme-dark body .navbar-main .theme-toggle.is-active,
+body.theme-dark .navbar-main .theme-toggle.is-active {
+  background: transparent !important;
+}
+html.theme-dark .navbar-main .theme-toggle .theme-toggle-track,
+html.theme-dark body .navbar-main .theme-toggle .theme-toggle-track,
+body.theme-dark .navbar-main .theme-toggle .theme-toggle-track,
+html.theme-dark .navbar-main .theme-toggle:hover .theme-toggle-track,
+html.theme-dark body .navbar-main .theme-toggle:hover .theme-toggle-track,
+body.theme-dark .navbar-main .theme-toggle:hover .theme-toggle-track,
+html.theme-dark .navbar-main .theme-toggle.is-active .theme-toggle-track,
+html.theme-dark body .navbar-main .theme-toggle.is-active .theme-toggle-track,
+body.theme-dark .navbar-main .theme-toggle.is-active .theme-toggle-track {
+  background: transparent !important;
+  box-shadow: none !important;
 }
 html.theme-dark .card,
 html.theme-dark body .card,
@@ -12127,6 +12154,29 @@ html.theme-dark body .comment,
 body.theme-dark .comment {
   color: #d8dde8 !important;
 }
+html.theme-dark .content p,
+html.theme-dark body .content p,
+body.theme-dark .content p,
+html.theme-dark .content li,
+html.theme-dark body .content li,
+body.theme-dark .content li,
+html.theme-dark .content td,
+html.theme-dark body .content td,
+body.theme-dark .content td,
+html.theme-dark .content th,
+html.theme-dark body .content th,
+body.theme-dark .content th {
+  color: #d8dde8 !important;
+}
+html.theme-dark .content strong,
+html.theme-dark body .content strong,
+body.theme-dark .content strong,
+html.theme-dark .content b,
+html.theme-dark body .content b,
+body.theme-dark .content b {
+  color: #f6f8ff !important;
+  font-weight: 700;
+}
 html.theme-dark a,
 html.theme-dark body a,
 body.theme-dark a,
@@ -12155,14 +12205,118 @@ html.theme-dark body figure.highlight .highlight-body,
 body.theme-dark figure.highlight .highlight-body,
 html.theme-dark figure.highlight table,
 html.theme-dark body figure.highlight table,
-body.theme-dark figure.highlight table,
-html.theme-dark pre,
-html.theme-dark body pre,
-body.theme-dark pre,
-html.theme-dark code,
-html.theme-dark body code,
-body.theme-dark code {
+body.theme-dark figure.highlight table {
   background: #181b23 !important;
+  color: #d7dde8 !important;
+}
+html.theme-dark figure.highlight,
+html.theme-dark body figure.highlight,
+body.theme-dark figure.highlight {
+  border: 1px solid rgba(255,255,255,0.08);
+}
+html.theme-dark figure.highlight figcaption,
+html.theme-dark body figure.highlight figcaption,
+body.theme-dark figure.highlight figcaption,
+html.theme-dark figure.highlight .gutter,
+html.theme-dark body figure.highlight .gutter,
+body.theme-dark figure.highlight .gutter {
+  background: #232733 !important;
+  color: #9aa7bb !important;
+}
+html.theme-dark figure.highlight .code,
+html.theme-dark body figure.highlight .code,
+body.theme-dark figure.highlight .code,
+html.theme-dark figure.highlight .line,
+html.theme-dark body figure.highlight .line,
+body.theme-dark figure.highlight .line,
+html.theme-dark figure.highlight pre,
+html.theme-dark body figure.highlight pre,
+body.theme-dark figure.highlight pre,
+html.theme-dark figure.highlight code,
+html.theme-dark body figure.highlight code,
+body.theme-dark figure.highlight code {
+  color: #d7dde8 !important;
+}
+html.theme-dark figure.highlight .hljs-comment,
+html.theme-dark body figure.highlight .hljs-comment,
+body.theme-dark figure.highlight .hljs-comment,
+html.theme-dark figure.highlight .hljs-quote,
+html.theme-dark body figure.highlight .hljs-quote,
+body.theme-dark figure.highlight .hljs-quote {
+  color: #9aa7bb !important;
+}
+html.theme-dark figure.highlight .hljs-keyword,
+html.theme-dark body figure.highlight .hljs-keyword,
+body.theme-dark figure.highlight .hljs-keyword,
+html.theme-dark figure.highlight .hljs-selector-tag,
+html.theme-dark body figure.highlight .hljs-selector-tag,
+body.theme-dark figure.highlight .hljs-selector-tag,
+html.theme-dark figure.highlight .hljs-built_in,
+html.theme-dark body figure.highlight .hljs-built_in,
+body.theme-dark figure.highlight .hljs-built_in,
+html.theme-dark figure.highlight .hljs-name,
+html.theme-dark body figure.highlight .hljs-name,
+body.theme-dark figure.highlight .hljs-name {
+  color: #ff7ab6 !important;
+}
+html.theme-dark figure.highlight .hljs-title,
+html.theme-dark body figure.highlight .hljs-title,
+body.theme-dark figure.highlight .hljs-title,
+html.theme-dark figure.highlight .hljs-function,
+html.theme-dark body figure.highlight .hljs-function,
+body.theme-dark figure.highlight .hljs-function,
+html.theme-dark figure.highlight .hljs-section,
+html.theme-dark body figure.highlight .hljs-section,
+body.theme-dark figure.highlight .hljs-section {
+  color: #7dcfff !important;
+}
+html.theme-dark figure.highlight .hljs-string,
+html.theme-dark body figure.highlight .hljs-string,
+body.theme-dark figure.highlight .hljs-string,
+html.theme-dark figure.highlight .hljs-regexp,
+html.theme-dark body figure.highlight .hljs-regexp,
+body.theme-dark figure.highlight .hljs-regexp {
+  color: #9ece6a !important;
+}
+html.theme-dark figure.highlight .hljs-number,
+html.theme-dark body figure.highlight .hljs-number,
+body.theme-dark figure.highlight .hljs-number,
+html.theme-dark figure.highlight .hljs-literal,
+html.theme-dark body figure.highlight .hljs-literal,
+body.theme-dark figure.highlight .hljs-literal {
+  color: #ffd166 !important;
+}
+html.theme-dark figure.highlight .hljs-type,
+html.theme-dark body figure.highlight .hljs-type,
+body.theme-dark figure.highlight .hljs-type,
+html.theme-dark figure.highlight .hljs-class,
+html.theme-dark body figure.highlight .hljs-class,
+body.theme-dark figure.highlight .hljs-class,
+html.theme-dark figure.highlight .hljs-variable,
+html.theme-dark body figure.highlight .hljs-variable,
+body.theme-dark figure.highlight .hljs-variable,
+html.theme-dark figure.highlight .hljs-params,
+html.theme-dark body figure.highlight .hljs-params,
+body.theme-dark figure.highlight .hljs-params {
+  color: #c4b5fd !important;
+}
+html.theme-dark figure.highlight .hljs-attr,
+html.theme-dark body figure.highlight .hljs-attr,
+body.theme-dark figure.highlight .hljs-attr,
+html.theme-dark figure.highlight .hljs-attribute,
+html.theme-dark body figure.highlight .hljs-attribute,
+body.theme-dark figure.highlight .hljs-attribute,
+html.theme-dark figure.highlight .hljs-symbol,
+html.theme-dark body figure.highlight .hljs-symbol,
+body.theme-dark figure.highlight .hljs-symbol {
+  color: #f2cd75 !important;
+}
+html.theme-dark .content :not(pre) > code,
+html.theme-dark body .content :not(pre) > code,
+body.theme-dark .content :not(pre) > code {
+  background: #2a3040 !important;
+  color: #f6d365 !important;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 html.theme-dark .tag,
 html.theme-dark body .tag,
