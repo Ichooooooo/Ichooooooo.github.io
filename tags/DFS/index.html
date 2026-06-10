@@ -1,5 +1,13 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>标签: DFS - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="msapplication-TileImage" content="/img/favicon.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Hexo"><meta property="og:url" content="https://ichooooooo.github.io/"><meta property="og:site_name" content="Hexo"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://ichooooooo.github.io/img/og_image.png"><meta property="article:author" content="Ichooooooo"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://ichooooooo.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://Ichooooooo.github.io"},"headline":"Hexo","image":["https://ichooooooo.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Ichooooooo"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://ichooooooo.github.io/img/logo.jpg"}},"description":""}</script><link rel="icon" href="/img/favicon.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><script>
+                (function() {
+                    try {
+                        if (localStorage.getItem('blog-theme-mode') === 'dark') {
+                            document.documentElement.classList.add('theme-dark');
+                        }
+                    } catch (e) {}
+                })();
+            </script><meta name="robots" content="noindex"><meta><title>标签: DFS - Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="msapplication-TileImage" content="/img/favicon.jpg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Hexo"><meta property="og:url" content="https://ichooooooo.github.io/"><meta property="og:site_name" content="Hexo"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://ichooooooo.github.io/img/og_image.png"><meta property="article:author" content="Ichooooooo"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://ichooooooo.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://Ichooooooo.github.io"},"headline":"Hexo","image":["https://ichooooooo.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Ichooooooo"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://ichooooooo.github.io/img/logo.jpg"}},"description":""}</script><link rel="icon" href="/img/favicon.jpg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
   (function () {
       function switchTab() {
           if (!location.hash) {
@@ -38,7 +46,38 @@
                     fold: 'unfolded'
                 }
             }
-        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+        };</script><script>
+            (function() {
+                function applyThemeMode(mode) {
+                    var isDark = mode === 'dark';
+                    document.documentElement.classList.toggle('theme-dark', isDark);
+                    document.body.classList.toggle('theme-dark', isDark);
+                    document.querySelectorAll('.theme-toggle').forEach(function(button) {
+                        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+                        button.setAttribute('title', isDark ? '切换到浅色模式' : '切换到深色模式');
+                    });
+                }
+                var savedMode = 'light';
+                try {
+                    savedMode = localStorage.getItem('blog-theme-mode') || 'light';
+                } catch (e) {}
+                applyThemeMode(savedMode);
+                document.addEventListener('click', function(event) {
+                    var button = event.target.closest && event.target.closest('.theme-toggle');
+                    if (!button) return;
+                    event.preventDefault();
+                    var nextMode = document.documentElement.classList.contains('theme-dark') ? 'light' : 'dark';
+                    document.body.classList.add('theme-switching');
+                    applyThemeMode(nextMode);
+                    try {
+                        localStorage.setItem('blog-theme-mode', nextMode);
+                    } catch (e) {}
+                    window.setTimeout(function() {
+                        document.body.classList.remove('theme-switching');
+                    }, 520);
+                });
+            })();
+        </script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
       window.cookieconsent.initialise({
         type: "info",
         theme: "edgeless",
