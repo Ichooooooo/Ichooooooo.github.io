@@ -1,5 +1,27 @@
 /* eslint-disable node/no-unsupported-features/node-builtins */
 (function($, moment, ClipboardJS, config) {
+    function applyThemeMode(mode) {
+        const isDark = mode === 'dark';
+        $('html').toggleClass('theme-dark', isDark);
+        $('body').toggleClass('theme-dark', isDark);
+        $('.theme-toggle').attr('aria-pressed', isDark ? 'true' : 'false');
+    }
+
+    const savedThemeMode = window.localStorage && window.localStorage.getItem('blog-theme-mode');
+    applyThemeMode(savedThemeMode || 'light');
+
+    $('.theme-toggle').on('click', function() {
+        const nextMode = $('html').hasClass('theme-dark') ? 'light' : 'dark';
+        $('body').addClass('theme-switching');
+        applyThemeMode(nextMode);
+        if (window.localStorage) {
+            window.localStorage.setItem('blog-theme-mode', nextMode);
+        }
+        window.setTimeout(function() {
+            $('body').removeClass('theme-switching');
+        }, 520);
+    });
+
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
